@@ -1,5 +1,6 @@
 import { Buffer } from "node:buffer";
 import * as _ws from "ws";
+import * as IsSocket from "../IsSocket/IsSocket.js";
 import * as Promises from "../Promises/Promises.js";
 
 // workaround for jest or node bug
@@ -16,6 +17,9 @@ const webSocketServer = new WebSocketServer({
 });
 
 export const handleUpgrade = (request, socket) => {
+  if (!IsSocket.isSocket(socket)) {
+    throw new TypeError(`socket must be of type Socket`);
+  }
   const { promise, resolve } = Promises.withResolvers();
   const upgradeCallback = (ws) => {
     resolve(ws);
