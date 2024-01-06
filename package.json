@@ -1,0 +1,29 @@
+{
+  "name": "@lvce-editor/web-socket-server",
+  "version": "0.0.0-dev",
+  "description": "",
+  "main": "src/index.js",
+  "type": "module",
+  "scripts": {
+    "test": "node --unhandled-rejections=warn --experimental-vm-modules ./node_modules/jest/bin/jest.js --detectOpenHandles --forceExit",
+    "test:watch": "node --unhandled-rejections=warn --experimental-vm-modules ./node_modules/jest/bin/jest.js --watch"
+  },
+  "keywords": [
+    "lvce-editor",
+    "web-socket-server"
+  ],
+  "author": "Lvce Editor",
+  "license": "MIT",
+  "dependencies": {
+    "ws": "^8.16.0"
+  },
+  "devDependencies": {
+    "@types/jest": "^29.5.11",
+    "@types/ws": "^8.5.10",
+    "execa": "^8.0.1",
+    "jest": "^29.7.0",
+    "prettier": "^3.1.1",
+    "rollup": "^4.9.4",
+    "typescript": "^5.3.3"
+  }
+}
