@@ -21,9 +21,6 @@ export const handleUpgrade = (request, socket) => {
     throw new TypeError(`socket must be of type Socket`)
   }
   const { promise, resolve } = Promises.withResolvers()
-  const upgradeCallback = (ws) => {
-    resolve(ws)
-  }
-  webSocketServer.handleUpgrade(request, socket, Buffer.alloc(0), upgradeCallback)
+  webSocketServer.handleUpgrade(request, socket, Buffer.alloc(0), resolve)
   return promise
 }
