@@ -31,5 +31,8 @@
     "semi": false,
     "singleQuote": true,
     "printWidth": 150
+  },
+  "engines": {
+    "node": ">=22"
   }
 }
