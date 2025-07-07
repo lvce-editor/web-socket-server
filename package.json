@@ -20,14 +20,14 @@
     "ws": "^8.18.3"
   },
   "devDependencies": {
-    "@jest/globals": "^30.0.3",
+    "@jest/globals": "^30.0.4",
     "@types/jest": "^30.0.0",
     "@types/node": "^22.15.8",
     "@types/ws": "^8.18.1",
     "execa": "^9.6.0",
-    "jest": "^30.0.3",
+    "jest": "^30.0.4",
     "prettier": "^3.6.2",
-    "rollup": "^4.44.1",
+    "rollup": "^4.44.2",
     "typescript": "^5.8.3"
   },
   "prettier": {
