@@ -1,3 +1,3 @@
-import { WebSocket } from "ws";
+import { WebSocket } from 'ws'
 
-export const handleUpgrade: (request: any, socket: any) => Promise<WebSocket>;
+export const handleUpgrade: (request: any, socket: any) => Promise<WebSocket>
