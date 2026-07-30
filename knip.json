@@ -1,0 +1,6 @@
+{
+  "$schema": "https://unpkg.com/knip@6/schema.json",
+  "entry": ["scripts/build.js", "src/index.js", "test/**/*.test.js"],
+  "project": ["scripts/**/*.js", "src/**/*.js", "test/**/*.js"],
+  "ignoreDependencies": ["jest", "rollup"]
+}
